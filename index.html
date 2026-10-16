@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Birthday Surprise 🎂</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <div class="sparkle s1">✦</div><div class="sparkle s2">♡</div>
+    <div class="sparkle s3">✿</div><div class="sparkle s4">✧</div>
+    <header>
+      <p class="eyebrow">A LITTLE SOMETHING JUST FOR YOU</p>
+      <h1>A Birthday Surprise <span>🎂</span></h1>
+      <p class="subtitle">Made with love, gratitude, and seventeen pending gossip reports.</p>
+    </header>
+
+    <section class="scene" aria-label="Animated birthday cake">
+      <canvas id="partyCanvas" width="600" height="430"></canvas>
+      <div id="greeting" class="greeting" aria-live="polite"></div>
+    </section>
+
+    <button id="startButton" class="start-button">Start the surprise ✨</button>
+    <audio id="birthdayMusic" src="birthday.mp3" loop preload="auto"></audio>
+
+    <section id="noteSection" class="note-card hidden">
+      <p class="eyebrow">A LITTLE BIRTHDAY NOTE</p>
+      <div id="noteText" class="note-text"></div>
+      <button id="continueButton" class="start-button">Read the final message 💗</button>
+    </section>
+
+    <section id="ending" class="ending hidden">
+      <p class="eyebrow">THE LAST LITTLE THING</p>
+      <h2>HAPPY BIRTHDAY</h2>
+      <h3>AUNTYJIIII ♡</h3>
+      <div class="ending-lines">
+        <p>Some teachers become<br>beautiful memories,<br>but you became someone<br>I will always cherish.</p>
+        <p>Thank you for every lesson,<br>every little laugh,<br>and every memory<br>I still carry in my heart.</p>
+      </div>
+      <p class="signature">With love, respect &amp; endless gratitude</p>
+      <p class="signature big">Your PA ♡</p>
+    </section>
+    <footer>Made especially for Auntyjiii ♡</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
