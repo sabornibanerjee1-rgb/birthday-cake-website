@@ -176,7 +176,6 @@ function addNoteParagraphs() {
   noteText.classList.add('scrolling-note');
 }
 
-}
 startButton.addEventListener('click', async () => {
   if(started) return;
   started = true;
