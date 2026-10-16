@@ -161,21 +161,19 @@ seventeen pending gossip reports,
 Your PA, forever grateful to have been your student.`;
 
 
+
 function addNoteParagraphs() {
   noteText.innerHTML = '';
 
- function addNoteParagraphs() {
-    noteText.innerHTML = '';
+  note.split(/\n\s*\n/).forEach(part => {
+    const p = document.createElement('p');
+    p.textContent = part.trim();
+    noteText.appendChild(p);
+  });
 
-    note.split(/\n\s*\n/).forEach(part => {
-        const p = document.createElement('p');
-        p.textContent = part.trim();
-        noteText.appendChild(p);
-    });
-
-    noteText.classList.remove('scrolling-note');
-    void noteText.offsetWidth;
-    noteText.classList.add('scrolling-note');
+  noteText.classList.remove('scrolling-note');
+  void noteText.offsetWidth;
+  noteText.classList.add('scrolling-note');
 }
 startButton.addEventListener('click', async () => {
   if(started) return;
