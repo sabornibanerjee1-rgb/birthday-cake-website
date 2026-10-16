@@ -50,3 +50,23 @@ footer { text-align: center; color: #8a91a0; font-size: .85rem; padding: 20px 0 
 @keyframes twinkle { 0%,100% { opacity: .45; transform: scale(.85) rotate(0); } 50% { opacity: 1; transform: scale(1.15) rotate(12deg); } }
 @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
 @media (max-width: 560px) { .page { padding: 25px 14px; } .sparkle { font-size: 1.4rem; } }
+#noteSection {
+    overflow: hidden;
+}
+
+#noteText {
+    position: relative;
+}
+
+#noteText.scrolling-note {
+    animation: birthdayTextScroll 100s linear forwards;
+}
+
+@keyframes birthdayTextScroll {
+    from {
+        transform: translateY(250px);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
